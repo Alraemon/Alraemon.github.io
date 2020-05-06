@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>归档: 2020/4 - Note Stack | 笔记栈</title>
+<title>标签: LaTeX 学习笔记 - Note Stack | 笔记栈</title>
 
 
 
@@ -109,33 +109,63 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        四月 2020
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2020-04-17T04:37:47.000Z">2020-04-17</time>
-                        <a href="/Colab-Review/" class="title has-link-black-ter is-size-6 has-text-weight-normal">谷歌Colab使用心得</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">LaTeX 学习笔记</a></li>
+        </ul>
+        </nav>
     </div>
 </div>
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-06T16:34:54.000Z">2020-05-07</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 170 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/latex-cjk-punct/">LaTeX中文句号和句点的设置</a>
+            
+        </h1>
+        <div class="content">
+            <p>最近在搞毕业论文的$\LaTeX$模版，当中遇到一点问题，就是文章的样式里中英文的句号都是一个句点，最后发现是cls文件里<code>xeCJK</code>宏包的设置问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\setCJKmainfont[]&#123;&#125;</span><br><span class="line">\setCJKmainfont[Mapping &#x3D; fullwidth-stop,BoldFont&#x3D;STHeitiSC-Medium, ItalicFont&#x3D;STKaitiSC-Regular]&#123;STSongti-SC-Regular&#125;</span><br></pre></td></tr></table></figure>
+
+<p>问题就出在那个<code>Mapping</code>上，<code>fullwidth-stop</code>会把所有句号替换成句点。当然<code>Mapping</code>的选项不止这几个，还可以把句点改成句号，繁简体中文转换等，这个问题的解决也得益于一位前辈的博文，非常感谢。</p>
+<blockquote>
+<p>相关博文链接：<br><a href="https://matnoble.me/tech/latex/latex-period/">https://matnoble.me/tech/latex/latex-period/</a></p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
 
 
 </div>
